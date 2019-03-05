@@ -14,7 +14,7 @@ ga('send', 'pageview');
 
 <script>
 ga_trackers=[];
-ga(function(){
+setTimeout(function(){
 	ga.getAll().forEach(function(x,i){
 		ga_trackers.push(x.get('name'))
 	});
@@ -37,7 +37,7 @@ ga(function(){
 			}
 		});
 	})
-});
+}, 1000);
 </script>
 
 <script async src="https://ga.clearbit.com/v1/ga.js?authorization=pk_f20f3764d8cd4792f86f2011fe02e225">
